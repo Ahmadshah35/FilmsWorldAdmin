@@ -1,0 +1,77 @@
+/* Container centering the card */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow-x: hidden;  */
+  }
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;  /* Full width */
+    height: 100vh; /* Full height */
+    background: #1a1a1a;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* The card style */
+  .card {
+     background: linear-gradient(135deg, #ff0000, #000000);
+    padding: 50px;
+    border-radius: 8px;
+    width: 320px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Card header style */
+  .card-header {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input fields */
+  .card-input {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    background: #dbdbdb;
+    color: #808080;
+    font-size: 1rem;
+    transition: background 0.2s;
+  }
+  
+  .card-input:focus {
+    background: #dbdbdb;
+    outline: none;
+  }
+  
+  /* Send button */
+  .card-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #f5f5f5;
+    color: #000000;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .card-button:hover {
+    background: #afaeaf;
+  }
+  

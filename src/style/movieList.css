@@ -1,0 +1,54 @@
+/* Ensure the body and root take up full screen */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+/* Main wrapper to enable scrolling */
+.movies-wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto; /* Enables vertical scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Fixes cut-off issue */
+    padding-top: 20px; /* Adds spacing from the top */
+}
+
+/* Grid container for movies */
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Movie card styling */
+.movie-card {
+    background: linear-gradient(135deg, #ff0000, #000000);
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 350px; /* Ensures consistent image height */
+    border-radius: 5px;
+    object-fit: cover;
+}
+

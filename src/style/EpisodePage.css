@@ -1,0 +1,71 @@
+/* Make the entire page scrollable */
+.episode-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
+    background: #1a1a1a;
+    overflow-y: auto; /* Enables vertical scrolling */
+  }
+  
+  /* Title styling */
+  .title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid layout for episodes */
+  .episode-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    padding-bottom: 50px; /* Prevents cutting off last row */
+  }
+  
+  /* Episode card styling */
+  .episode-card {
+    background: linear-gradient(135deg, #ff0000, #000000);
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  
+  .episode-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Watch button styling */
+  .watch-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+  
+  .watch-btn:hover {
+    color: #d3d3d3;
+    background: #000000;
+    transform: scale(1.05);;
+  }
+  
+  /* Enable smooth scrolling */
+  html, body {
+    scroll-behavior: smooth;
+  }
+  

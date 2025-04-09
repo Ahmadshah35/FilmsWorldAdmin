@@ -1,0 +1,90 @@
+/* Full-page styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+    scroll-behavior: smooth;
+}
+
+/* Season container */
+.season-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
+    
+    background: #1a1a1a;
+    overflow-y: auto;
+}
+
+/* Title */
+.season-header {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Grid layout for seasons */
+.season-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+}
+
+/* Season card */
+.season-card {
+    background: linear-gradient(135deg, #ff0000, #000000);
+    padding: 40px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.season-card:hover {
+    transform: scale(1.05);
+}
+
+/* Season title */
+.season-title {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.season-button {
+    width: 100%;
+    margin: 5px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    color: rgb(19, 18, 18);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.season-button:hover {
+    color: #d3d3d3;
+    background: #000000;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .season-container{
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+}

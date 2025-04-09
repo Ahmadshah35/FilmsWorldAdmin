@@ -1,0 +1,267 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    /* overflow-y: auto; Ensure scrolling is enabled */
+    scroll-behavior: smooth;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: #121212;
+    color: white;
+    padding-top: 500px; /* Push content down below fixed header */
+    overflow-y: auto; 
+}
+
+/* Sticky Full-Width Header */
+/* Sticky Header Fix */
+.home-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100px;
+    background: linear-gradient(45deg, #ff0000, #000000);
+    /* padding: px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Align Header Content */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Search & Buttons Row */
+.search-and-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 95%;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+/* Category Buttons */
+.category-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
+}
+
+.category-buttons button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-buttons button:hover {
+    background: black;
+    color: white;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    background: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px;
+    width: 250px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    background: red;
+}
+
+/* Movies Grid */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensures 4 per row on large screens */
+    gap: 60px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.Heading1 {
+    padding: -40px;
+}
+
+.home-grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensures 4 per row on large screens */
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20%;
+}
+
+
+.home-gird h2{
+    min-width: 100;
+}
+
+section h2{
+    width: 100%;
+    text-align: left;
+    padding-left: 120px;
+    
+}
+
+.home-grid {
+    margin-top: 50px; /* Reduce margin-top */
+}
+
+.home-card{
+    background: linear-gradient(135deg, #ff0000, #000000);
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.home-card img {
+    width: 100%;
+    height: 300px;
+}
+
+.home-card:hover {
+    transform: scale(1.05);
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #ff0000, #000000);
+    padding: 90px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .popup-buttons {
+    margin-top: 10px;
+  }
+  
+  .popup-buttons button {
+    background: rgb(255, 255, 255);
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    transition: 0.3s;
+  }
+
+  .trending-popup-buttons button {
+    background: rgb(255, 255, 255);
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    transition: 0.3s;
+  }
+
+  .popup-buttons button:hover {
+    background: black;
+    color: white;
+}
+  
+  .popup-buttons button:nth-child(2) {
+    background: #dc3545;
+  }
+  
+.del-btn {
+    width: 100%;
+    margin: 5px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    color: rgb(19, 18, 18);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.del-btn:hover {
+    color: #d3d3d3;
+    background: #000000;
+    transform: scale(1.05)
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .home-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-and-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

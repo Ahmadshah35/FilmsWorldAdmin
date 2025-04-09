@@ -1,0 +1,77 @@
+/* TrendingMovies.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    overflow-y: auto; 
+    scroll-behavior: smooth;
+  }
+
+.trending-movies-page {
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .movies-list {
+    margin-top: 20px;
+  }
+  
+  .movie-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: linear-gradient(30deg, #ff0000, #000000);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-row button {
+    background: white;
+    color: black;
+  }
+
+  .movie-info {
+    font-size: 1rem;
+    font-weight: 500;
+    
+  }
+  
+  .movie-info strong {
+    font-weight: bold;
+  }
+  
+  /* Optional: You can add hover effect for each row */
+  .movie-row:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .movie-row div {
+    padding: 5px;
+  }
+  
+  .trending-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px; /* Adjust as needed */
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .trending-header h1 {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .movie-count {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,45 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+  /* overflow-y: auto; Ensure scrolling is enabled */
+  scroll-behavior: smooth;
+}
+
+.users-page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: #121212;
+  color: white;
+  padding: 10px; /* Push content down below fixed header */
+  overflow-y: auto;
+  }
+  
+  .users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensures 4 per row on large screens */
+    gap: 100px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20%;
+  }
+  
+  .user-card {
+    color: black;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .user-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
